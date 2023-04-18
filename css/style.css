@@ -32,7 +32,7 @@ body {
   min-height: 100vh;
   background-color: var(--pale-blue);
   text-align: center;
-  background-image: url(/images/pattern-background-desktop.svg);
+  background-image: url(../images/pattern-background-desktop.svg);
   background-repeat: repeat-x;
 }
 
