@@ -1,0 +1,122 @@
+:root {
+  --pale-blue: hsl(225, 100%, 94%);
+  --bright-blue: #3829e0;
+  --btn-payment-hover: hsl(245, 59%, 64%);
+  --very-pale-blue: hsl(225, 100%, 98%);
+  --white: hsl(225, 100%, 100%);
+  --desaturated-blue: hsl(224, 23%, 55%);
+  --dark-blue: hsl(223, 47%, 23%);
+
+  --font-weight-500: 500;
+  --font-weight-700: 700;
+  --font-weight-900: 900;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+body {
+  color: var(--desaturated-blue);
+  line-height: 1.6;
+  font-family: "Red Hat Display", sans-serif;
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  background-color: var(--pale-blue);
+  text-align: center;
+  background-image: url(/images/pattern-background-desktop.svg);
+  background-repeat: repeat-x;
+}
+
+.order-summary {
+  max-width: 28.125rem;
+  border-radius: 1.25rem;
+  overflow: hidden;
+  -webkit-box-shadow: 29px 28px 64px -24px rgba(110, 110, 110, 1);
+  -moz-box-shadow: 29px 28px 64px -24px rgba(110, 110, 110, 1);
+  box-shadow: 29px 28px 64px -24px rgba(110, 110, 110, 1);
+}
+
+.container {
+  padding: 3rem;
+  display: grid;
+  background-color: var(--white);
+}
+
+.title {
+  font-size: 1.75rem;
+  color: var(--dark-blue);
+  margin-bottom: 0.625rem;
+  font-weight: var(--font-weight-900);
+}
+
+.content {
+  margin-bottom: 1.5rem;
+}
+
+.plan {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  padding: 1.5rem;
+  border-radius: 0.625rem;
+  margin-bottom: 1.8rem;
+  background-color: var(--very-pale-blue);
+}
+
+.change-plan {
+  font-weight: var(--font-weight-700);
+  margin-left: auto;
+}
+
+.change-plan:hover,
+.change-plan:focus {
+  opacity: 0.5;
+  text-decoration: none;
+}
+
+.accent {
+  font-weight: var(--font-weight-700);
+  color: var(--dark-blue);
+}
+
+.btn {
+  padding: 16px;
+  border-radius: 0.625rem;
+  font-size: 0.9375rem;
+  font-weight: var(--font-weight-700);
+  cursor: pointer;
+}
+
+.btn-payment {
+  color: var(--white);
+  background-color: var(--bright-blue);
+  border: 1px solid var(--dark-blue);
+  margin-bottom: 1rem;
+}
+
+.btn-payment:hover,
+.btn-payment:focus {
+  background-color: var(--btn-payment-hover);
+  border: 1px solid var(--btn-payment-hover);
+}
+
+.btn-cancel {
+  border: none;
+  background-color: transparent;
+  color: var(--desaturated-blue);
+  padding-bottom: 0;
+}
+
+.btn-cancel:hover,
+.btn-cancel:focus {
+  color: var(--dark-blue);
+}
